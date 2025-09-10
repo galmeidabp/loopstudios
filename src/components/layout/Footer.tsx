@@ -20,9 +20,9 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center lg:mt-0 lg:items-end">
           <div className="flex gap-5">
-            <Facebook />
-            <Twitter />
-            <Instagram />
+            <a href="#" className="hover:text-gray-300"><Facebook /></a>
+            <a href="#" className="hover:text-gray-300"><Twitter /></a>
+            <a href="#" className="hover:text-gray-300"><Instagram /></a>
           </div>
           <span className="text-gray-400 text-sm mt-5">© 2021 Loopstudios. All rights reserved.</span>
         </div>
