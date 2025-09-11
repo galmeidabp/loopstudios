@@ -5,6 +5,7 @@ export function Interactive() {
     <div className="m-auto mt-24 flex justify-center items-center flex-col gap-10 lg:relative lg:mt-40 lg:items-start lg:max-w-5xl">
 
       <motion.img
+        loading="lazy"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
