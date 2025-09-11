@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-w-[272px] m-auto py-10 flex flex-col items-center lg:max-w-5xl lg:flex-row lg:justify-between lg:items-start">
 
         <div className="">
-          <img src="./logo.svg" alt="LoopStudios" />
+          <img src="assets/logo.svg" alt="LoopStudios" />
           <nav className="flex flex-col items-center gap-5 mt-5 lg:flex-row">
             <NavLink title="About" />
             <NavLink title="Careers" />

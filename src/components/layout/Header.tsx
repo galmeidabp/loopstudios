@@ -4,7 +4,7 @@ import { DropdownMenu } from "../../ui/DropdownMenu";
 export function Header() {
   return (
     <header className="mix-w-[272px] m-auto flex justify-between items-center p-6 bg-transparent lg:px-0">
-      <a href="./"><img src="./logo.svg" alt="LoopStudios" width={130} height={100} className="lg:w-56" /></a>
+      <a href="./"><img src="assets/logo.svg" alt="LoopStudios" width={130} height={100} className="lg:w-56" /></a>
 
       <DropdownMenu />
 

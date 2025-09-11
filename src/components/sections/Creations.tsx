@@ -6,14 +6,14 @@ export function Creations() {
   const [openImg, setOpenImg] = useState<string | null>(null);
 
   const images = [
-    { image: "./image-deep-earth.jpg", title: "deep\nearth", imgPosition: "center right" },
-    { image: "./image-night-arcade.jpg", title: "night\narcade" },
-    { image: "./image-soccer-team.jpg", title: "soccer\nteam vr", imgPosition: "top" },
-    { image: "./image-grid.jpg", title: "the\ngrid" },
-    { image: "./image-from-above.jpg", title: "from up\nabove vr", imgPosition: "left" },
-    { image: "./image-pocket-borealis.jpg", title: "pocket\nborealis" },
-    { image: "./image-curiosity.jpg", title: "the\ncuriosity", imgPosition: "top" },
-    { image: "./image-fisheye.jpg", title: "make it\nfisheye" },
+    { image: "assets/image-deep-earth.jpg", title: "deep\nearth", imgPosition: "center right" },
+    { image: "assets/image-night-arcade.jpg", title: "night\narcade" },
+    { image: "assets/image-soccer-team.jpg", title: "soccer\nteam vr", imgPosition: "top" },
+    { image: "assets/image-grid.jpg", title: "the\ngrid" },
+    { image: "assets/image-from-above.jpg", title: "from up\nabove vr", imgPosition: "left" },
+    { image: "assets/image-pocket-borealis.jpg", title: "pocket\nborealis" },
+    { image: "assets/image-curiosity.jpg", title: "the\ncuriosity", imgPosition: "top" },
+    { image: "assets/image-fisheye.jpg", title: "make it\nfisheye" },
   ]
 
   return (

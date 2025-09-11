@@ -9,7 +9,7 @@ export function Interactive() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 0.5 }}
-        src="./image-interactive.jpg" alt="Homem com óculos de realidade virtual" className="w-full max-w-[272px] lg:max-w-none lg:w-[800px]" />
+        src="assets/image-interactive.jpg" alt="Homem com óculos de realidade virtual" className="w-full max-w-[272px] lg:max-w-none lg:w-[800px]" />
 
       <motion.div
         initial={{ opacity: 0, y: -50 }}
