@@ -10,11 +10,11 @@ export function App() {
 
   return (
     <div>
-      <motion.div 
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="bg-[url('/assets/image-hero.jpg')] bg-cover bg-center w-screen min-h-[600px] flex flex-col lg:min-h-[950px]">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="bg-[url('/assets/image-hero.jpg')] bg-cover bg-center w-full min-h-[600px] flex flex-col lg:min-h-[950px]">
         <div className="lg:max-w-5xl lg:mx-auto w-full">
           <Header />
           <Hero />

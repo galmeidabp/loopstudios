@@ -43,7 +43,7 @@ export function Creations() {
 
             <motion.img
               src={openImg}
-              alt="Enlarged"
+              alt="Creation Image"
               className="max-w-[90%] max-h-[90%] rounded-lg shadow-lg relative lg:min-w-[20%]"
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
