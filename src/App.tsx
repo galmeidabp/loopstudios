@@ -18,7 +18,7 @@ export function App() {
         className="relative w-full min-h-[600px] lg:min-h-[950px] flex flex-col"
       >
         <img
-          src="./assets/image-hero.webp"
+          src="/assets/image-hero.webp"
           alt="Pessoa usando óculos de realidade virtual"
           className="absolute inset-0 w-full h-full object-cover"
           fetchPriority="high"
