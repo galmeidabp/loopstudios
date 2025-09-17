@@ -2,34 +2,30 @@ import { useState } from "react";
 import { GridCard } from "../../ui/GridCard";
 import { AnimatePresence, motion } from "framer-motion";
 
-export function Creations() {
+export default function Creations() {
   const [openImg, setOpenImg] = useState<string | null>(null);
 
   const images = [
-    { image: "assets/image-deep-earth.jpg", title: "deep\nearth", imgPosition: "center right" },
-    { image: "assets/image-night-arcade.jpg", title: "night\narcade" },
-    { image: "assets/image-soccer-team.jpg", title: "soccer\nteam vr", imgPosition: "top" },
-    { image: "assets/image-grid.jpg", title: "the\ngrid" },
-    { image: "assets/image-from-above.jpg", title: "from up\nabove vr", imgPosition: "left" },
-    { image: "assets/image-pocket-borealis.jpg", title: "pocket\nborealis" },
-    { image: "assets/image-curiosity.jpg", title: "the\ncuriosity", imgPosition: "top" },
-    { image: "assets/image-fisheye.jpg", title: "make it\nfisheye" },
+    { image: "assets/image-deep-earth.webp", title: "deep\nearth", imgPosition: "center right" },
+    { image: "assets/image-night-arcade.webp", title: "night\narcade" },
+    { image: "assets/image-soccer-team.webp", title: "soccer\nteam vr", imgPosition: "top" },
+    { image: "assets/image-grid.webp", title: "the\ngrid" },
+    { image: "assets/image-from-above.webp", title: "from up\nabove vr", imgPosition: "left" },
+    { image: "assets/image-pocket-borealis.webp", title: "pocket\nborealis" },
+    { image: "assets/image-curiosity.webp", title: "the\ncuriosity", imgPosition: "top" },
+    { image: "assets/image-fisheye.webp", title: "make it\nfisheye" },
   ]
 
   return (
     <div className="max-w-[272px] m-auto mt-24 lg:max-w-5xl lg:mt-40">
       <h2 className="text-3xl uppercase font-serafin font-light text-center mb-5 lg:text-start lg:text-6xl">our creations</h2>
 
-      <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true, amount: 0.3 }}
+      <div
         className="grid gap-4 lg:grid lg:grid-cols-4 lg:gap-6 lg:mt-20 lg:mb-20">
         {images.map((img) => (
           <GridCard key={img.title} image={img.image} title={img.title} imgPosition={img.imgPosition} onClick={() => setOpenImg(img.image)} />
         ))}
-      </motion.div>
+      </div>
 
       <AnimatePresence>
         {openImg && (
